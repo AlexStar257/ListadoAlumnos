@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.engine("html", require("ejs").renderFile);
 app.use(rutas);
 
-const puerto = 4444;
+const puerto = 80;
 app.listen(puerto, () => {
 	console.log("Iniciando puerto " + puerto);
 });
