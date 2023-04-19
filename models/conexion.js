@@ -4,11 +4,18 @@ const { config } = require("dotenv");
 config();
 
 const connection = mysql.createConnection({
-    host:"52.32.208.197",
+    host:"54.218.120.60",
     user:"pepito",
     password:"pepito",
     database: "sistema"
 })
+
+// const connection = mysql.createConnection({
+//     host:"localhost",
+//     user:"root",
+//     password:"",
+//     database: "sistema"
+// })
 
 connection.connect( (err) => {
     if (err) {
